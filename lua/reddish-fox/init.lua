@@ -1,15 +1,3 @@
--- Assuming NVIM 0.7+ is being used, loads the theme 
-local function load_theme()
-  if vim.g.colors_name then
-    vim.cmd("hi clear")
-  end
-  vim.g.colors_name = "gruvbox"
-  vim.o.termguicolors = true
-  for group, settings in pairs(require("reddish-fox.groups").setup()) do
-    vim.api.nvim_set_hl(0, group, settings)
-  end
-end
-
 return {
   config = {
     undercurl = true,
@@ -33,11 +21,13 @@ return {
       self.config = vim.tbl_extend("force", self.config, config or {})
     end,
   load = function()
-      local version = vim.version()
-      if version.major == 0 and version.minor < 7 then
-        vim.notify_once("reddish-fox.nvim: NVIM 0.7+ is required")
-      else
-        load_theme()
+      if vim.g.colors_name then
+        vim.cmd("hi clear")
+      end
+      vim.g.colors_name = "reddish-fox"
+      vim.o.termguicolors = true
+      for group, settings in pairs(require("reddish-fox.groups").setup()) do
+        vim.api.nvim_set_hl(0, group, settings)
       end
     end
 }
