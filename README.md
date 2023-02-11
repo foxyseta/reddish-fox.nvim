@@ -1,12 +1,13 @@
 # redish.vim
 
-A vim colorscheme using redish colors. Has been dog fooded on neovim, in 256
-color terminal, but not (yet) much so on vim or a gui. If there are problems
-please let me know.
-
-When `let g:redish_transparent = 1` is set, the background color is not set to
-dark grey. This is useful when one wants to use the terminal background
-settings.
+A Lua rewrite of [Niko Humalamäki](https://github.com/aparaatti/)'s
+["Redish" Nvim colorscheme](https://github.com/aparaatti/redish.vim).
 
 ![screenshot](redish.gif)
 
+Some edits were made:
+
+- the background color is now always transparent. This means that
+  the terminal background color is used;
+- color columns are now visible. This lets you see which lines of the buffer
+  exceed the column number recommended maximum.
