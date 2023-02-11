@@ -1,4 +1,4 @@
-# redish.vim
+# Reddish Fox
 
 A Lua rewrite of [Niko Humalamäki](https://github.com/aparaatti/)'s
 ["Redish" Nvim colorscheme](https://github.com/aparaatti/redish.vim).
