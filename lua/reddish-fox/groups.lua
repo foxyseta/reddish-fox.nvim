@@ -21,7 +21,7 @@ return {
         -- Misc
         Underlined = { fg = p.lighthighlight, bg = p.normal_bg },
         Directory = { fg = p.focus_fg, bg = p.normal_bg, bold = true },
-        LineNr = { fg = p.normal_fg, bg = p.red_dimmer},
+        LineNr = { fg = p.normal_fg, bg = p.normal_bg },
         EndOfBuffer = { fg = p.black, bg = p.normal_bg },
         -- Menu
         Pmenu = { fg = p.slightestred, bg = p.gray },
@@ -43,7 +43,7 @@ return {
         SignColumn = { fg = p.normal_fg, bg = p.gray },
         CursorLine = { fg = p.red_dimmer, bg = p.normal_bg, bold = true },
         CursorColumn = { fg = p.red_dimmer, bg = p.normal_bg },
-        ColorColumn = { fg = p.slightestred, bg = p.normal_bg },
+        ColorColumn = { fg = p.normal_fg, bg = p.red_dimmer },
         -- Fold
         Folded = { fg = p.lightgray, bg = p.gray, italic = true },
         FoldColumn = { fg = p.lightgray, bg = p.gray },
