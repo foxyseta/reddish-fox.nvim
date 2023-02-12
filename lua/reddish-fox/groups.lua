@@ -30,8 +30,8 @@ return {
         PmenuThumb = { fg = p.lighthighlight, bg = p.normal_bg },
         WildMenu = { fg = p.slightestred, bg = p.gray },
         -- Terminal
-        TermCursor = { fg = p.normal_bg, bg = [202, 202] },
-        TermCursorNC = { fg = p.normal_bg, bg = [130, 130] },
+        TermCursor = { fg = p.normal_bg, bg = {202, 202} },
+        TermCursorNC = { fg = p.normal_bg, bg = {130, 130} },
         -- Lines and columns
         StatusLine = { fg = p.slightred, bg = p.darkgray, bold = true },
         StatusLineNC = { fg = p.normal_fg, bg = p.darkgray, bold = true },
