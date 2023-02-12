@@ -3,7 +3,7 @@
 A Lua rewrite of [Niko Humalamäki](https://github.com/aparaatti/)'s
 ["Redish" Nvim colorscheme](https://github.com/aparaatti/redish.vim).
 
-![screenshot](redish.gif)
+![screenshot](reddish-fox.png)
 
 Some edits were made:
 
